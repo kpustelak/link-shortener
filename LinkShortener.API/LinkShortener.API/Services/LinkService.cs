@@ -1,22 +1,26 @@
 using LinkShortener.API.Interface;
-using LinkShortener.API.Model.DTO;
+using LinkShortener.API.Model.Dto.Response;
 
 namespace LinkShortener.API.Services;
 
 public class LinkService : ILinkService
 {
-    public Task<string?> CreateLinkAsync(string url, string userIdentifier, string? password)
+    public async Task<string> CreateLinkAsync(string url, string shortenedUrl, string? password)
     {
-        throw new NotImplementedException();
+        return shortenedUrl;
     }
 
-    public Task<IsLinkExistingAndIsPasswordRequired> LinkExistsAsync(string url)
+    public async Task<IsLinkExistingAndIsPasswordRequiredDtoModel> LinkExistsAsync(string shortenedUrl)
     {
-        throw new NotImplementedException();
+        return new IsLinkExistingAndIsPasswordRequiredDtoModel
+        {
+            IsLinkExisting = true,
+            IsPasswordRequired = true
+        };
     }
 
-    public Task<string?> GetLinkAsync(string url, string? password)
+    public async Task<string?> GetLinkAsync(string shortenedUrl, string? password)
     {
-        throw new NotImplementedException();
+        return "Test";
     }
 }
