@@ -1,3 +1,5 @@
+using LinkShortener.API.Interface;
+using LinkShortener.API.Services;
 using StackExchange.Redis;
 
 namespace LinkShortener.API.Extensions;
@@ -11,8 +13,8 @@ public static class RedisDatabaseExtension
             var configuration = conf.GetConnectionString("RedisConnection");
             return ConnectionMultiplexer.Connect(configuration);
         });
-        
-        
+
+        services.AddScoped<IRedisCacheService, RedisCacheService>();
         return services;
     }
 }
