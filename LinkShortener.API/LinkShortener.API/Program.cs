@@ -89,12 +89,12 @@ void GetLinkInfo()
 }
 void GetLink()
 {
-    app.MapGet("/link/{shortenedUrl}/get", async ([FromRoute]string shortenedUrl, [FromBody] string password, ILinkService linkService) =>
+    app.MapPost("/link/{shortenedUrl}/get", async ([FromRoute]string shortenedUrl, [FromBody]GetUrlDtoModel? request, ILinkService linkService) =>
     {
         ResponseModel<string> result = new ResponseModel<string>();
         try
         {
-            var originalUrl = await linkService.GetLinkAsync(shortenedUrl, password);
+            var originalUrl = await linkService.GetLinkAsync(shortenedUrl, request?.Password);
             if (originalUrl == null)
             {
                 result.Status = false;
@@ -110,6 +110,7 @@ void GetLink()
         {
             result.Status = false;
             result.Message = "There was an error getting link";
+            result.Errors = [];
             result.Errors.Add(ex.Message);
             return Results.BadRequest(result);
         }
