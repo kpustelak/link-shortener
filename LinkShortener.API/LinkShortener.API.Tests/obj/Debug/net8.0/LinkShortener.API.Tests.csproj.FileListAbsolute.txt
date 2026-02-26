@@ -107,3 +107,8 @@
 /home/kornel/Documents/GitHub/link-shortener/LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net8.0/LinkShortener.API.Tests.pdb
 /home/kornel/Documents/GitHub/link-shortener/LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net8.0/LinkShortener.API.Tests.genruntimeconfig.cache
 /home/kornel/Documents/GitHub/link-shortener/LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net8.0/ref/LinkShortener.API.Tests.dll
+/home/kornel/Documents/GitHub/link-shortener/LinkShortener.API/LinkShortener.API.Tests/bin/Debug/net8.0/Castle.Core.dll
+/home/kornel/Documents/GitHub/link-shortener/LinkShortener.API/LinkShortener.API.Tests/bin/Debug/net8.0/Moq.dll
+/home/kornel/Documents/GitHub/link-shortener/LinkShortener.API/LinkShortener.API.Tests/bin/Debug/net8.0/System.Diagnostics.EventLog.dll
+/home/kornel/Documents/GitHub/link-shortener/LinkShortener.API/LinkShortener.API.Tests/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
+/home/kornel/Documents/GitHub/link-shortener/LinkShortener.API/LinkShortener.API.Tests/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll

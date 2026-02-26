@@ -8,43 +8,59 @@
     ".NETCoreApp,Version=v10.0": {
       "LinkShortener.API.Tests/1.0.0": {
         "dependencies": {
+          "LinkShortener.API": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.14.1",
+          "Moq": "4.20.72",
           "StackExchange.Redis": "2.11.8",
-          "Testcontainers": "4.10.0",
-          "xunit": "2.9.3",
-          "Testcontainers.Redis": "4.10.0.0"
+          "Testcontainers": "3.10.0",
+          "Testcontainers.Redis": "3.10.0",
+          "xunit": "2.9.3"
         },
         "runtime": {
           "LinkShortener.API.Tests.dll": {}
         }
       },
-      "BouncyCastle.Cryptography/2.6.2": {
+      "Castle.Core/5.1.1": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
         "runtime": {
-          "lib/net6.0/BouncyCastle.Cryptography.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.6.2.46322"
+          "lib/net6.0/Castle.Core.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.1.0"
           }
         }
       },
-      "Docker.DotNet.Enhanced/3.131.1": {
+      "Docker.DotNet/3.125.15": {
         "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.3"
+          "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "lib/net10.0/Docker.DotNet.dll": {
-            "assemblyVersion": "3.131.0.0",
-            "fileVersion": "3.131.1.1"
+          "lib/netstandard2.1/Docker.DotNet.dll": {
+            "assemblyVersion": "3.125.0.0",
+            "fileVersion": "3.125.15.1"
           }
         }
       },
-      "Docker.DotNet.Enhanced.X509/3.131.1": {
+      "Docker.DotNet.X509/3.125.15": {
         "dependencies": {
-          "Docker.DotNet.Enhanced": "3.131.1"
+          "Docker.DotNet": "3.125.15"
         },
         "runtime": {
-          "lib/net10.0/Docker.DotNet.X509.dll": {
-            "assemblyVersion": "3.131.0.0",
-            "fileVersion": "3.131.1.1"
+          "lib/netstandard2.1/Docker.DotNet.X509.dll": {
+            "assemblyVersion": "3.125.0.0",
+            "fileVersion": "3.125.15.1"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/10.0.3": {
+        "dependencies": {
+          "Microsoft.OpenApi": "2.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "10.0.3.0",
+            "fileVersion": "10.0.326.7603"
           }
         }
       },
@@ -56,29 +72,18 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1024.46610"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1325.6609"
-          }
-        }
-      },
       "Microsoft.NET.Test.Sdk/17.14.1": {
         "dependencies": {
           "Microsoft.CodeCoverage": "17.14.1",
           "Microsoft.TestPlatform.TestHost": "17.14.1"
+        }
+      },
+      "Microsoft.OpenApi/2.0.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
         }
       },
       "Microsoft.TestPlatform.ObjectModel/17.14.1": {
@@ -324,6 +329,17 @@
           }
         }
       },
+      "Moq/4.20.72": {
+        "dependencies": {
+          "Castle.Core": "5.1.1"
+        },
+        "runtime": {
+          "lib/net6.0/Moq.dll": {
+            "assemblyVersion": "4.20.72.0",
+            "fileVersion": "4.20.72.0"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -348,21 +364,27 @@
           }
         }
       },
-      "SSH.NET/2025.1.0": {
+      "SSH.NET/2023.0.0": {
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.6.2",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.3"
+          "SshNet.Security.Cryptography": "1.3.0"
         },
         "runtime": {
-          "lib/net9.0/Renci.SshNet.dll": {
-            "assemblyVersion": "2025.1.0.1",
-            "fileVersion": "2025.1.0.1"
+          "lib/net7.0/Renci.SshNet.dll": {
+            "assemblyVersion": "2023.0.0.0",
+            "fileVersion": "2023.0.0.0"
+          }
+        }
+      },
+      "SshNet.Security.Cryptography/1.3.0": {
+        "runtime": {
+          "lib/netstandard2.0/SshNet.Security.Cryptography.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
           }
         }
       },
       "StackExchange.Redis/2.11.8": {
         "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Pipelines.Sockets.Unofficial": "2.2.8",
           "System.IO.Hashing": "10.0.2"
         },
@@ -370,6 +392,16 @@
           "lib/net8.0/StackExchange.Redis.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.11.8.9359"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/6.0.0": {
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
           }
         }
       },
@@ -381,18 +413,28 @@
           }
         }
       },
-      "Testcontainers/4.10.0": {
+      "Testcontainers/3.10.0": {
         "dependencies": {
-          "Docker.DotNet.Enhanced": "3.131.1",
-          "Docker.DotNet.Enhanced.X509": "3.131.1",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
-          "SSH.NET": "2025.1.0",
+          "Docker.DotNet": "3.125.15",
+          "Docker.DotNet.X509": "3.125.15",
+          "SSH.NET": "2023.0.0",
           "SharpZipLib": "1.4.2"
         },
         "runtime": {
-          "lib/net10.0/Testcontainers.dll": {
-            "assemblyVersion": "4.10.0.0",
-            "fileVersion": "4.10.0.0"
+          "lib/net8.0/Testcontainers.dll": {
+            "assemblyVersion": "3.10.0.0",
+            "fileVersion": "3.10.0.0"
+          }
+        }
+      },
+      "Testcontainers.Redis/3.10.0": {
+        "dependencies": {
+          "Testcontainers": "3.10.0"
+        },
+        "runtime": {
+          "lib/net8.0/Testcontainers.Redis.dll": {
+            "assemblyVersion": "3.10.0.0",
+            "fileVersion": "3.10.0.0"
           }
         }
       },
@@ -446,11 +488,15 @@
           }
         }
       },
-      "Testcontainers.Redis/4.10.0.0": {
+      "LinkShortener.API/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "10.0.3",
+          "StackExchange.Redis": "2.11.8"
+        },
         "runtime": {
-          "Testcontainers.Redis.dll": {
-            "assemblyVersion": "4.10.0.0",
-            "fileVersion": "4.10.0.0"
+          "LinkShortener.API.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -462,26 +508,33 @@
       "serviceable": false,
       "sha512": ""
     },
-    "BouncyCastle.Cryptography/2.6.2": {
+    "Castle.Core/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7oWOcvnntmMKNzDLsdxAYqApt+AjpRpP2CShjMfIa3umZ42UQMvH0tl1qAliYPNYO6vTdcGMqnRrCPmsfzTI1w==",
-      "path": "bouncycastle.cryptography/2.6.2",
-      "hashPath": "bouncycastle.cryptography.2.6.2.nupkg.sha512"
+      "sha512": "sha512-rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "path": "castle.core/5.1.1",
+      "hashPath": "castle.core.5.1.1.nupkg.sha512"
     },
-    "Docker.DotNet.Enhanced/3.131.1": {
+    "Docker.DotNet/3.125.15": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hGLHCNUsQbT2Ab/HUznRnNqYZQs40zInXa3eLwYjeNyfUYbw1pqqDGqcOLl5uGepS8IuigEYakEdAcVT/2ezYg==",
-      "path": "docker.dotnet.enhanced/3.131.1",
-      "hashPath": "docker.dotnet.enhanced.3.131.1.nupkg.sha512"
+      "sha512": "sha512-XN8FKxVv8Mjmwu104/Hl9lM61pLY675s70gzwSj8KR5pwblo8HfWLcCuinh9kYsqujBkMH4HVRCEcRuU6al4BQ==",
+      "path": "docker.dotnet/3.125.15",
+      "hashPath": "docker.dotnet.3.125.15.nupkg.sha512"
     },
-    "Docker.DotNet.Enhanced.X509/3.131.1": {
+    "Docker.DotNet.X509/3.125.15": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8FU7zmttFQzp0xb0EPupxQ0nGtC2cTpukgh3jMxMT8luj5TSDyzIKTnroDpXCjpg9P2fV+6JIvC+IetsMEfyBA==",
-      "path": "docker.dotnet.enhanced.x509/3.131.1",
-      "hashPath": "docker.dotnet.enhanced.x509.3.131.1.nupkg.sha512"
+      "sha512": "sha512-ONQN7ImrL3tHStUUCCPHwrFFQVpIpE+7L6jaDAMwSF+yTEmeWBmRARQZDRuvfj/+WtB8RR0oTW0tT3qQMSyHOw==",
+      "path": "docker.dotnet.x509/3.125.15",
+      "hashPath": "docker.dotnet.x509.3.125.15.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.OpenApi/10.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SAvSrKDgnY5GDjDAngOXxPhUvEKlTU/0zIq8zidqHvh/xnZBPs0Vc4LqwyvnmnafNnyUaivtRABz4K4wodXfSg==",
+      "path": "microsoft.aspnetcore.openapi/10.0.3",
+      "hashPath": "microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.14.1": {
       "type": "package",
@@ -490,26 +543,19 @@
       "path": "microsoft.codecoverage/17.14.1",
       "hashPath": "microsoft.codecoverage.17.14.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.2",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-dL0QGToTxggRLMYY4ZYX5AMwBb+byQBd/5dMiZE07Nv73o6I5Are3C7eQTh7K2+A4ct0PVISSr7TZANbiNb2yQ==",
-      "path": "microsoft.extensions.logging.abstractions/8.0.3",
-      "hashPath": "microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512"
-    },
     "Microsoft.NET.Test.Sdk/17.14.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-HJKqKOE+vshXra2aEHpi2TlxYX7Z9VFYkr+E5rwEvHC8eIXiyO+K9kNm8vmNom3e2rA56WqxU+/N9NJlLGXsJQ==",
       "path": "microsoft.net.test.sdk/17.14.1",
       "hashPath": "microsoft.net.test.sdk.17.14.1.nupkg.sha512"
+    },
+    "Microsoft.OpenApi/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GGYLfzV/G/ct80OZ45JxnWP7NvMX1BCugn/lX7TH5o0lcVaviavsLMTxmFV2AybXWjbi3h6FF1vgZiTK6PXndw==",
+      "path": "microsoft.openapi/2.0.0",
+      "hashPath": "microsoft.openapi.2.0.0.nupkg.sha512"
     },
     "Microsoft.TestPlatform.ObjectModel/17.14.1": {
       "type": "package",
@@ -524,6 +570,13 @@
       "sha512": "sha512-d78LPzGKkJwsJXAQwsbJJ7LE7D1wB+rAyhHHAaODF+RDSQ0NgMjDFkSA1Djw18VrxO76GlKAjRUhl+H8NL8Z+Q==",
       "path": "microsoft.testplatform.testhost/17.14.1",
       "hashPath": "microsoft.testplatform.testhost.17.14.1.nupkg.sha512"
+    },
+    "Moq/4.20.72": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EA55cjyNn8eTNWrgrdZJH5QLFp2L43oxl1tlkoYUKIE9pRwL784OWiTXeCV5ApS+AMYEAlt7Fo03A2XfouvHmQ==",
+      "path": "moq/4.20.72",
+      "hashPath": "moq.4.20.72.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
@@ -546,12 +599,19 @@
       "path": "sharpziplib/1.4.2",
       "hashPath": "sharpziplib.1.4.2.nupkg.sha512"
     },
-    "SSH.NET/2025.1.0": {
+    "SSH.NET/2023.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jrnbtf0ItVaXAe6jE8X/kSLa6uC+0C+7W1vepcnRQB/rD88qy4IxG7Lf1FIbWmkoc4iVXv0pKrz+Wc6J4ngmHw==",
-      "path": "ssh.net/2025.1.0",
-      "hashPath": "ssh.net.2025.1.0.nupkg.sha512"
+      "sha512": "sha512-g+3VDUrYhm0sqSxmlQFgRFrmBxhQvVh4pfn4pqjkX7WXE3tTjt1tIsOtjuz3mz/5s8gFFQVRydwCJ7Ohs54sJA==",
+      "path": "ssh.net/2023.0.0",
+      "hashPath": "ssh.net.2023.0.0.nupkg.sha512"
+    },
+    "SshNet.Security.Cryptography/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5pBIXRjcSO/amY8WztpmNOhaaCNHY/B6CcYDI7FSTgqSyo/ZUojlLiKcsl+YGbxQuLX439qIkMfP0PHqxqJi/Q==",
+      "path": "sshnet.security.cryptography/1.3.0",
+      "hashPath": "sshnet.security.cryptography.1.3.0.nupkg.sha512"
     },
     "StackExchange.Redis/2.11.8": {
       "type": "package",
@@ -560,6 +620,13 @@
       "path": "stackexchange.redis/2.11.8",
       "hashPath": "stackexchange.redis.2.11.8.nupkg.sha512"
     },
+    "System.Diagnostics.EventLog/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
+      "path": "system.diagnostics.eventlog/6.0.0",
+      "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    },
     "System.IO.Hashing/10.0.2": {
       "type": "package",
       "serviceable": true,
@@ -567,12 +634,19 @@
       "path": "system.io.hashing/10.0.2",
       "hashPath": "system.io.hashing.10.0.2.nupkg.sha512"
     },
-    "Testcontainers/4.10.0": {
+    "Testcontainers/3.10.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-a7tH+s9IRME6QEeMRgl/mTqQyudgtGNJmJRPn1+LwW8w/2L11cJzRJd7Io0QoSrP+i6lAOETX2SRY7cLbElcdQ==",
-      "path": "testcontainers/4.10.0",
-      "hashPath": "testcontainers.4.10.0.nupkg.sha512"
+      "sha512": "sha512-4oFyiUPCOM3s/sKDnIcOJZIn664d/8+fPvODDlfbb0QAfQqHlqjc2kIoFOLAt3oJRZP9/FJtTvcNvp9j7h4UBA==",
+      "path": "testcontainers/3.10.0",
+      "hashPath": "testcontainers.3.10.0.nupkg.sha512"
+    },
+    "Testcontainers.Redis/3.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MLOZd/OJNG9SoZHbWR7Pr8Luh5fYSQ3kfbqZgz30uETmpR93sgDWnaXoyWL+QqRvOk0361/WRuBxwlhH0qtCBg==",
+      "path": "testcontainers.redis/3.10.0",
+      "hashPath": "testcontainers.redis.3.10.0.nupkg.sha512"
     },
     "xunit/2.9.3": {
       "type": "package",
@@ -616,8 +690,8 @@
       "path": "xunit.extensibility.execution/2.9.3",
       "hashPath": "xunit.extensibility.execution.2.9.3.nupkg.sha512"
     },
-    "Testcontainers.Redis/4.10.0.0": {
-      "type": "reference",
+    "LinkShortener.API/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }
