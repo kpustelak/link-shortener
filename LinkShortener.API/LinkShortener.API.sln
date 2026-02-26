@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.API", "LinkShortener.API\LinkShortener.API.csproj", "{2DD1CD64-7374-4ABC-88D9-8EA671942C32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.API.Tests", "LinkShortener.API.Tests\LinkShortener.API.Tests.csproj", "{196E803F-8AD9-4CCB-A15A-8CD01483F0D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{2DD1CD64-7374-4ABC-88D9-8EA671942C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DD1CD64-7374-4ABC-88D9-8EA671942C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DD1CD64-7374-4ABC-88D9-8EA671942C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{196E803F-8AD9-4CCB-A15A-8CD01483F0D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{196E803F-8AD9-4CCB-A15A-8CD01483F0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{196E803F-8AD9-4CCB-A15A-8CD01483F0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{196E803F-8AD9-4CCB-A15A-8CD01483F0D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

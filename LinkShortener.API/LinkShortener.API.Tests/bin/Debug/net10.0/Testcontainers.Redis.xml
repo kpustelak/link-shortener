@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>Testcontainers.Redis</name>
+    </assembly>
+    <members>
+        <member name="T:Testcontainers.Redis.RedisBuilder">
+            <summary>
+            An abstract fluent Docker container builder.
+            </summary>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisBuilder.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Testcontainers.Redis.RedisBuilder" /> class.
+            </summary>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisBuilder.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Testcontainers.Redis.RedisBuilder" /> class.
+            </summary>
+            <param name="image">
+            The full Docker image name, including the image repository and tag
+            (e.g., <c>redis:7.0</c>).
+            </param>
+            <remarks>
+            Docker image tags available at <see href="https://hub.docker.com/_/redis/tags" />.
+            </remarks>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisBuilder.#ctor(DotNet.Testcontainers.Images.IImage)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Testcontainers.Redis.RedisBuilder" /> class.
+            </summary>
+            <param name="image">
+            An <see cref="T:DotNet.Testcontainers.Images.IImage" /> instance that specifies the Docker image to be used
+            for the container builder configuration.
+            </param>
+            <remarks>
+            Docker image tags available at <see href="https://hub.docker.com/_/redis/tags" />.
+            </remarks>
+        </member>
+        <member name="P:Testcontainers.Redis.RedisBuilder.DockerResourceConfiguration">
+            <summary>
+            Gets the Docker resource configuration.
+            </summary>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisBuilder.Build">
+            <summary>
+            Builds an instance of <see cref="T:Testcontainers.Redis.RedisContainer" /> with the given resource configuration.
+            </summary><returns>A configured instance of <see cref="T:Testcontainers.Redis.RedisContainer" />.</returns><exception cref="T:System.ArgumentException">Thrown when a mandatory Docker resource configuration is not set.</exception>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisBuilder.Init">
+            <summary>
+            Initializes the fluent Docker resource builder.
+            </summary><remarks>
+            Due to the immutable design decision the configuration cannot be kept during the object instantiation.
+            To keep the configuration override <see cref="P:DotNet.Testcontainers.Builders.AbstractBuilder`4.DockerResourceConfiguration" />.
+            </remarks><example><code>
+              public sealed class CustomBuilder : AbstractBuilder&lt;CustomBuilder, IContainer, IContainerConfiguration&gt;
+              {
+                public CustomBuilder() : base(new ContainerConfiguration())
+                {
+                  this.DockerResourceConfiguration = this.Init().DockerResourceConfiguration;
+                }
+              <br />
+                protected override IContainerConfiguration DockerResourceConfiguration { get; }
+              <br />
+                protected override CustomBuilder Init()
+                {
+                  return base.Init().WithLabel("custom.builder", bool.TrueString.ToLowerInvariant());
+                }
+              }
+              </code></example><returns>A configured instance of <see cref="T:Testcontainers.Redis.RedisBuilder" />.</returns>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisBuilder.Clone(DotNet.Testcontainers.Configurations.IResourceConfiguration{Docker.DotNet.Models.CreateContainerParameters})">
+            <summary>
+            Clones the Docker resource builder configuration.
+            </summary><param name="resourceConfiguration">The Docker resource configuration.</param><returns>A configured instance of <see cref="T:Testcontainers.Redis.RedisBuilder" />.</returns>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisBuilder.Clone(DotNet.Testcontainers.Configurations.IContainerConfiguration)">
+            <summary>
+            Clones the Docker resource builder configuration.
+            </summary><param name="resourceConfiguration">The Docker resource configuration.</param><returns>A configured instance of <see cref="T:Testcontainers.Redis.RedisBuilder" />.</returns>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisBuilder.Merge(Testcontainers.Redis.RedisConfiguration,Testcontainers.Redis.RedisConfiguration)">
+            <summary>
+            Merges the Docker resource builder configuration.
+            </summary><param name="oldValue">The old Docker resource configuration.</param><param name="newValue">The new Docker resource configuration.</param><returns>A configured instance of <see cref="T:Testcontainers.Redis.RedisBuilder" />.</returns>
+        </member>
+        <member name="T:Testcontainers.Redis.RedisConfiguration">
+            <summary>
+            A container configuration.
+            </summary>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Testcontainers.Redis.RedisConfiguration" /> class.
+            </summary>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisConfiguration.#ctor(DotNet.Testcontainers.Configurations.IResourceConfiguration{Docker.DotNet.Models.CreateContainerParameters})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Testcontainers.Redis.RedisConfiguration" /> class.
+            </summary>
+            <param name="resourceConfiguration">The Docker resource configuration.</param>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisConfiguration.#ctor(DotNet.Testcontainers.Configurations.IContainerConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Testcontainers.Redis.RedisConfiguration" /> class.
+            </summary>
+            <param name="resourceConfiguration">The Docker resource configuration.</param>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisConfiguration.#ctor(Testcontainers.Redis.RedisConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Testcontainers.Redis.RedisConfiguration" /> class.
+            </summary>
+            <param name="resourceConfiguration">The Docker resource configuration.</param>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisConfiguration.#ctor(Testcontainers.Redis.RedisConfiguration,Testcontainers.Redis.RedisConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Testcontainers.Redis.RedisConfiguration" /> class.
+            </summary>
+            <param name="oldValue">The old Docker resource configuration.</param>
+            <param name="newValue">The new Docker resource configuration.</param>
+        </member>
+        <member name="T:Testcontainers.Redis.RedisContainer">
+            <summary>
+            A container instance.
+            </summary>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisContainer.#ctor(Testcontainers.Redis.RedisConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Testcontainers.Redis.RedisContainer" /> class.
+            </summary>
+            <param name="configuration">The container configuration.</param>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisContainer.GetConnectionString">
+            <summary>
+            Gets the Redis connection string.
+            </summary>
+            <returns>The Redis connection string.</returns>
+        </member>
+        <member name="M:Testcontainers.Redis.RedisContainer.ExecScriptAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Executes the Lua script in the Redis container.
+            </summary>
+            <param name="scriptContent">The content of the Lua script to execute.</param>
+            <param name="ct">Cancellation token.</param>
+            <returns>Task that completes when the Lua script has been executed.</returns>
+        </member>
+    </members>
+</doc>
