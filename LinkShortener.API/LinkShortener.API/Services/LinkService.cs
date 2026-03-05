@@ -17,6 +17,10 @@ public class LinkService : ILinkService
     
     public async Task<string> CreateLinkAsync(string url, string shortenedUrl, string? password)
     {
+        if (string.IsNullOrEmpty(shortenedUrl) || string.IsNullOrEmpty(url))
+        {
+            throw new ArgumentException("One of the required values is empty.");
+        }
         string key = shortenedUrl;
         var data = new LinkModel{Url = url, Password = password == null ? null :  _passwordService.HashPassword(password)};
         if (await _redisCacheService.GetAsync<LinkModel>(key) != null)
@@ -29,6 +33,10 @@ public class LinkService : ILinkService
 
     public async Task<IsLinkExistingAndIsPasswordRequiredDtoModel> LinkExistsAsync(string shortenedUrl)
     {
+        if (string.IsNullOrEmpty(shortenedUrl))
+        {
+            throw new ArgumentException("One of the required values is empty.");
+        }
         var data = await _redisCacheService.GetAsync<LinkModel>(shortenedUrl);
         return new IsLinkExistingAndIsPasswordRequiredDtoModel
         {
@@ -39,6 +47,11 @@ public class LinkService : ILinkService
 
     public async Task<string?> GetLinkAsync(string shortenedUrl, string? password)
     {
+        if (string.IsNullOrEmpty(shortenedUrl))
+        {
+            throw new ArgumentException("One of the required values is empty.");
+        }
+        
         var data = await _redisCacheService.GetAsync<LinkModel>(shortenedUrl);
         
         if (data == null) { throw new Exception("This link does not exists."); }
