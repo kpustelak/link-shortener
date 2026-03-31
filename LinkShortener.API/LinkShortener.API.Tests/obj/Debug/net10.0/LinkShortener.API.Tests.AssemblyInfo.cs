@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinkShortener.API.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b974f418013ebba5d804c93762c5ab0b9971a599")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b47001ccd41f9ee170a3f8201554f59e77706c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinkShortener.API.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinkShortener.API.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
