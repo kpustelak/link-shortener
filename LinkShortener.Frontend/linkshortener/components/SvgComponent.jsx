@@ -1,6 +1,6 @@
 const SvgComponent = () => {
     return(
-        <div className="flex flex-col w-1/2 justify-center items-center">
+        <div className="2xl:flex flex-col w-1/2 justify-center items-center hidden">
             <svg width="800" height="553" viewBox="0 0 800 553" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_2_4)">
                     <path d="M786.377 0H13.622C9.97941 0.0353856 6.49958 1.51416 3.94587 4.11192C1.39216 6.70969 -0.0269082 10.2143 9.86445e-06 13.857V538.867C-0.0210499 542.505 1.40083 546.003 3.95411 548.595C6.50739 551.187 9.98389 552.661 13.622 552.695H786.377C790.015 552.661 793.491 551.187 796.045 548.595C798.598 546.003 800.02 542.505 799.999 538.867V13.857C800.026 10.2147 798.607 6.71033 796.054 4.11263C793.501 1.51492 790.021 0.0359118 786.379 0H786.377Z" fill="#090814"/>

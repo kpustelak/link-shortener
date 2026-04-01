@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="055ea5c4-1da0-4943-ada0-e868af01d687" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/linkshortener/components/FormComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkshortener/components/SvgComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkshortener/public/gh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkshortener/public/le.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkshortener/public/meow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkshortener/public/splashundertext.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkshortener/public/undraw_radio-options_403c 1.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkshortener/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkshortener/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/components/FormComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/components/FormComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/components/SvgComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/components/SvgComponent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linkshortener/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkshortener/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +65,7 @@
       <updated>1774905826473</updated>
       <workItem from="1774905827977" duration="1674000" />
       <workItem from="1774979697803" duration="13380000" />
-      <workItem from="1775034704349" duration="9157000" />
+      <workItem from="1775034704349" duration="10064000" />
     </task>
     <servers />
   </component>

@@ -6,8 +6,8 @@ import SideComponent from "../components/SvgComponent.jsx";
 function App() {
 
   return (
-    <div className="bg-[url(../public/meow.svg)] bg-no-repeat bg-right bg-contain duration-0 transition-none">
-        <div className="flex bg-[url(../public/splashundertext.svg)] bg-no-repeat bg-left">
+    <div className="2xl:bg-[url(../public/meow.svg)] bg-no-repeat bg-right bg-contain duration-0 transition-none">
+        <div className="flex bg-[url(../public/splashundertext.svg)] bg-no-repeat 2xl:bg-left bg-center">
             <FormComponent />
             <SideComponent className="flex"/>
         </div>

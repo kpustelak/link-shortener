@@ -27,8 +27,8 @@ export default function FormComponen(){
         }
     }
 
-    return <div className="w-1/2 font-roboto-flex h-screen  bg-no-repeat bg-center">
-            <form className="flex flex-col h-5/6 mx-34 justify-center pt-30">
+    return <div className="2xl:w-1/2 font-roboto-flex h-screen  bg-no-repeat bg-center w-full">
+            <form className="flex flex-col h-5/6 2xl:mx-34 justify-center pt-30 mx-10 md:mx-40">
                 <p className="text-5xl font-medium text-center mb-12">LINK SHORTENER</p>
                 <p className={`${!isUrlWrong && "hidden"} text-red-600`}>Url is invalid.</p>
                 <input
