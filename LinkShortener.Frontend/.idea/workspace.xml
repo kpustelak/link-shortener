@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="055ea5c4-1da0-4943-ada0-e868af01d687" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/linkshortener/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net10.0/LinkShortener.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net10.0/LinkShortener.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net10.0/LinkShortener.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net10.0/LinkShortener.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkshortener/components/FormComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkshortener/components/SvgComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkshortener/public/gh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkshortener/public/le.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkshortener/public/meow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkshortener/public/splashundertext.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkshortener/public/undraw_radio-options_403c 1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,23 +32,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "/home/kornel/Documents/GitHub/link-shortener/LinkShortener.Frontend/linkshortener",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.FormComponent.jsx.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;frontend&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kornel/Documents/GitHub/link-shortener/LinkShortener.Frontend/linkshortener&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/app/extra/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/linkshortener" />
@@ -60,7 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1774905826473</updated>
       <workItem from="1774905827977" duration="1674000" />
-      <workItem from="1774979697803" duration="1272000" />
+      <workItem from="1774979697803" duration="13380000" />
+      <workItem from="1775034704349" duration="9157000" />
     </task>
     <servers />
   </component>
