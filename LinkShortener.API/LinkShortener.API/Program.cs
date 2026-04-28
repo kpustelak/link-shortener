@@ -6,12 +6,24 @@ using Microsoft.AspNetCore.Mvc;
 using LinkShortener.API.Model.Dto.Response;
 
 var builder = WebApplication.CreateBuilder(args);
+var  ReactFrontOrigin = "_reactFrontOrigin";
 
 builder.Services.AddOpenApi();
 builder.Services.AddAntiforgery();
 
 builder.Services.AddRedisDatabase(builder.Configuration);
 builder.Services.AddLinkServices();
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: ReactFrontOrigin,
+        policy  =>
+        {
+            policy.WithOrigins("http://localhost:5173");
+            policy.WithHeaders("Content-Type");
+        });
+});
 
 var app = builder.Build();
 
@@ -23,6 +35,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseAntiforgery();
 app.UseHttpsRedirection();
+app.UseCors(ReactFrontOrigin);
 
 # region Minimal api endpoint functions
 
@@ -52,6 +65,7 @@ void AddLink()
             {
                 result.Status = false;
                 result.Message = "There was an error creating link";
+                result.Errors ??= [];
                 result.Errors.Add(ex.Message);
                 return Results.BadRequest(result);
             
@@ -81,6 +95,7 @@ void GetLinkInfo()
         {
             result.Status = false;
             result.Message = "There was an error validating link";
+            result.Errors ??= [];
             result.Errors.Add(ex.Message);
             return Results.BadRequest(result);
         }

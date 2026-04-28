@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="055ea5c4-1da0-4943-ada0-e868af01d687" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net10.0/LinkShortener.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net10.0/LinkShortener.API.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net10.0/LinkShortener.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net10.0/LinkShortener.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net10.0/LinkShortener.API.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API.Tests/obj/Debug/net10.0/LinkShortener.API.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkShortener.API/LinkShortener.API/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linkshortener/components/FormComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/components/FormComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkshortener/components/SvgComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/components/SvgComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linkshortener/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/src/assets/hero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/src/assets/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/src/assets/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkshortener/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/linkshortener/src/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +57,14 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/linkshortener" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/linkshortener" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.23567.141" />
       </set>
     </attachedChunks>
   </component>
@@ -65,7 +77,11 @@
       <updated>1774905826473</updated>
       <workItem from="1774905827977" duration="1674000" />
       <workItem from="1774979697803" duration="13380000" />
-      <workItem from="1775034704349" duration="10064000" />
+      <workItem from="1775034704349" duration="15622000" />
+      <workItem from="1775063140642" duration="60000" />
+      <workItem from="1776980126100" duration="92000" />
+      <workItem from="1776980236374" duration="3000" />
+      <workItem from="1777413705846" duration="688000" />
     </task>
     <servers />
   </component>
